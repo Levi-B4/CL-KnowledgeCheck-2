@@ -1,0 +1,2 @@
+SELECT CustomerName FROM Customers where CustomerID is (SELECT CustomerID FROM Orders where OrderID is 10310);
+SELECT address FROM Suppliers where SupplierID is (SELECT SupplierID FROM Products WHERE ProductID is 40);
